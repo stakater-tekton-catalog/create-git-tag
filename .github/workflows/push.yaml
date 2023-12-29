@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'helm/**'
+  workflow_dispatch:
 
 jobs:
   build-helm-and-push-helm:
