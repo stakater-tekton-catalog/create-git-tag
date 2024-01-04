@@ -5,8 +5,8 @@ metadata:
   labels:
     app.kubernetes.io/version: "{{ .Chart.Version }}"
   annotations:
-    tekton.dev/categories: CLI
-    tekton.dev/tags: "git, cli"
+    tekton.dev/categories: Git
+    tekton.dev/tags: "git"
     tekton.dev/displayName: "Create Git Tag"
     description: |
       Creates version for repo, by updating the patch of the latest git tag
