@@ -5,8 +5,11 @@ kind: Task
 metadata:
   name: stakater-create-git-tag
   labels:
-    app.kubernetes.io/version: "1.0.8"
+    app.kubernetes.io/version: "0.0.11"
   annotations:
+    tekton.dev/categories: CLI
+    tekton.dev/tags: "git, cli"
+    tekton.dev/displayName: "Create Git Tag"
     description: |
       Creates version for repo, by updating the patch of the latest git tag
 spec:
