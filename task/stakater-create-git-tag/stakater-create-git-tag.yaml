@@ -5,7 +5,7 @@ kind: Task
 metadata:
   name: stakater-create-git-tag
   labels:
-    app.kubernetes.io/version: "0.0.12"
+    app.kubernetes.io/version: "0.0.13"
   annotations:
     tekton.dev/categories: Git
     tekton.dev/tags: "git"
@@ -39,7 +39,7 @@ spec:
       description: Current tag of application before update
   steps:
     - name: create-tag-file
-      image: gittools/gitversion:6.0.0
+      image: gittools/gitversion:6.0.1
       command: ["/bin/bash"]
       workingDir: $(workspaces.source.path)
       args:
