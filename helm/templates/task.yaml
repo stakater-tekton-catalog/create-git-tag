@@ -37,7 +37,7 @@ spec:
       description: Current tag of application before update
   steps:
     - name: create-tag-file
-      image: gittools/gitversion:6.0.1
+      image: gittools/gitversion:6.1.0
       command: ["/bin/bash"]
       workingDir: $(workspaces.source.path)
       args:
